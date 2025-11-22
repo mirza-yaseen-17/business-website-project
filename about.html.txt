@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About – NovaEdge Consulting</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="site-header">
+    <nav class="nav">
+        <div class="nav__brand">
+            <div class="nav__logo-mark"></div>
+            <div class="nav__title">
+                NovaEdge
+                <span>Digital Consulting Studio</span>
+            </div>
+        </div>
+        <div class="nav__links">
+            <a href="index.html">Home</a>
+            <a href="about.html" class="nav__link--active">About</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <a href="contact.html" class="cta-button">
+            Book a discovery call →
+        </a>
+    </nav>
+</header>
+
+<main>
+    <div class="wrapper">
+        <section class="two-column">
+            <div>
+                <div class="hero__eyebrow">About the studio</div>
+                <h1 class="section-title" style="margin-top: 1.2rem;">
+                    A small, focused team shipping big outcomes.
+                </h1>
+                <p class="section-subtitle" style="margin-top: 0.8rem;">
+                    NovaEdge is a boutique web & cloud consultancy working with founders and marketing teams
+                    to build websites that look sharp, load fast, and convert better.
+                </p>
+
+                <div class="spacer-sm"></div>
+                <p class="text-muted">
+                    We operate at the intersection of design, engineering, and DevOps. That means streamlined workflows,
+                    clean codebases, and deployment pipelines that teams actually enjoy using.
+                </p>
+
+                <blockquote>
+                    “Our metric isn’t pageviews, it’s business impact. The best compliment we get from clients is
+                    that their website finally feels like an extension of the product, not an afterthought.”
+                </blockquote>
+
+                <div class="chip-row">
+                    <span class="chip">AWS-backed hosting</span>
+                    <span class="chip">DevOps-friendly handover</span>
+                    <span class="chip">Performance-first design</span>
+                    <span class="chip">Transparent communication</span>
+                </div>
+            </div>
+
+            <div>
+                <div class="section-header" style="margin-bottom: 0.9rem;">
+                    <div>
+                        <h2 class="section-title">Leadership team</h2>
+                        <p class="section-subtitle">
+                            Hands-on consultants with backgrounds in engineering, design, and product.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="team-grid">
+                    <article class="team-card">
+                        <div class="team-card__image">
+                            <img src="assets/images/team-1.jpg" alt="Portrait – Principal Consultant" />
+                        </div>
+                        <div>
+                            <div class="team-card__name">Aarav Mehta</div>
+                            <div class="team-card__role">Principal Consultant · Strategy & Delivery</div>
+                            <p class="team-card__meta">
+                                8+ years in SaaS, previous roles at product-led startups. Specialises in positioning
+                                and information architecture for B2B companies.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="team-card">
+                        <div class="team-card__image">
+                            <img src="assets/images/team-2.jpg" alt="Portrait – Technical Lead" />
+                        </div>
+                        <div>
+                            <div class="team-card__name">Sara Iqbal</div>
+                            <div class="team-card__role">Technical Lead · Web & Cloud</div>
+                            <p class="team-card__meta">
+                                Cloud-native engineer focused on highly reliable web infrastructures. Loves clean CSS,
+                                Nginx configs, and automated deployment pipelines.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-inner">
+        <span>© 2025 NovaEdge Consulting. All rights reserved.</span>
+        <span>Built with HTML, CSS, Git & Nginx on AWS.</span>
+    </div>
+</footer>
+</body>
+</html>

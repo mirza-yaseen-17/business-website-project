@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio – NovaEdge Consulting</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="site-header">
+    <nav class="nav">
+        <div class="nav__brand">
+            <div class="nav__logo-mark"></div>
+            <div class="nav__title">
+                NovaEdge
+                <span>Digital Consulting Studio</span>
+            </div>
+        </div>
+        <div class="nav__links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html" class="nav__link--active">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <a href="contact.html" class="cta-button">
+            Book a discovery call →
+        </a>
+    </nav>
+</header>
+
+<main>
+    <div class="wrapper">
+        <section>
+            <div class="section-header">
+                <div>
+                    <h1 class="section-title">Selected work & visual explorations.</h1>
+                    <p class="section-subtitle">
+                        A small snapshot of recent projects across SaaS, professional services, and emerging brands.
+                        Screens are anonymised but representative of real engagements.
+                    </p>
+                </div>
+            </div>
+
+            <div class="portfolio-filters">
+                <span class="filter-pill filter-pill--active">All</span>
+                <span class="filter-pill">SaaS</span>
+                <span class="filter-pill">Professional services</span>
+                <span class="filter-pill">Launch campaigns</span>
+            </div>
+
+            <div class="portfolio-grid">
+                <article class="portfolio-item">
+                    <div class="portfolio-thumb">
+                        <img src="assets/images/project-1.jpg" alt="Project 1 website preview" />
+                    </div>
+                    <div class="portfolio-body">
+                        <div class="portfolio-title">SignalWave Analytics</div>
+                        <div class="portfolio-meta">
+                            SaaS dashboard & marketing site · End-to-end redesign and AWS-backed deployment.
+                        </div>
+                    </div>
+                </article>
+
+                <article class="portfolio-item">
+                    <div class="portfolio-thumb">
+                        <img src="assets/images/project-2.jpg" alt="Project 2 website preview" />
+                    </div>
+                    <div class="portfolio-body">
+                        <div class="portfolio-title">Everstone Legal</div>
+                        <div class="portfolio-meta">
+                            Professional services website with structured content and lead-capture flows.
+                        </div>
+                    </div>
+                </article>
+
+                <article class="portfolio-item">
+                    <div class="portfolio-thumb">
+                        <img src="assets/images/project-3.jpg" alt="Project 3 website preview" />
+                    </div>
+                    <div class="portfolio-body">
+                        <div class="portfolio-title">Northline Freight</div>
+                        <div class="portfolio-meta">
+                            Logistics brand refresh, responsive website, and multi-region hosting rollout.
+                        </div>
+                    </div>
+                </article>
+
+                <article class="portfolio-item">
+                    <div class="portfolio-thumb">
+                        <img src="assets/images/project-4.jpg" alt="Project 4 website preview" />
+                    </div>
+                    <div class="portfolio-body">
+                        <div class="portfolio-title">Studio Quartz</div>
+                        <div class="portfolio-meta">
+                            Visual studio portfolio with gallery-style layout and fast image delivery.
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-inner">
+        <span>© 2025 NovaEdge Consulting. All rights reserved.</span>
+        <span>Built with HTML, CSS, Git & Nginx on AWS.</span>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NovaEdge Consulting – Digital Strategy & Cloud Solutions</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="site-header">
+    <nav class="nav">
+        <div class="nav__brand">
+            <div class="nav__logo-mark"></div>
+            <div class="nav__title">
+                NovaEdge
+                <span>Digital Consulting Studio</span>
+            </div>
+        </div>
+        <div class="nav__links">
+            <a href="index.html" class="nav__link--active">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <a href="contact.html" class="cta-button">
+            Book a discovery call →
+        </a>
+    </nav>
+</header>
+
+<main>
+    <div class="wrapper">
+        <section class="hero">
+            <div class="hero__content">
+                <div class="hero__eyebrow">
+                    End-to-end digital execution
+                </div>
+                <h1 class="hero__title">
+                    We design, build & launch
+                    <span>high-performing business websites</span>.
+                </h1>
+                <p class="hero__subtitle">
+                    NovaEdge partners with growing brands to craft modern digital experiences:
+                    fast, secure, and ready to scale. From concept to cloud deployment, we take care of the full stack.
+                </p>
+
+                <div class="hero__meta">
+                    <div class="hero__stats">
+                        <div class="stat">
+                            <span class="stat__value">35+</span>
+                            <span class="stat__label">Projects delivered</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat__value">4.9★</span>
+                            <span class="stat__label">Client satisfaction</span>
+                        </div>
+                    </div>
+                    <p class="hero__annotation">
+                        Typical go-live in under 14 business days.
+                    </p>
+                </div>
+            </div>
+
+            <div class="hero__visual">
+                <article class="hero-card">
+                    <div class="hero-card__badge">Live preview · Sample</div>
+                    <p class="hero-card__headline">Website health snapshot</p>
+                    <h2 class="hero-card__title">acme-fintech.com</h2>
+                    <p class="hero-card__text">
+                        Lighthouse score improved from <strong>56 → 95</strong> after a full redesign, CDN setup,
+                        and backend optimizations.
+                    </p>
+
+                    <div class="hero-pill-row">
+                        <span class="hero-pill">+71% session duration</span>
+                        <span class="hero-pill">–43% bounce rate</span>
+                        <span class="hero-pill">SEO-ready structure</span>
+                    </div>
+
+                    <div class="hero-card__footer">
+                        <span>Cloud: AWS · Nginx · SSL</span>
+                        <span>Stack: HTML · CSS · JS</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-header">
+                <div>
+                    <h2 class="section-title">What we help you ship</h2>
+                    <p class="section-subtitle">
+                        From positioning and visual identity to technical implementation, we bring a product mindset to corporate websites.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card-grid-3">
+                <article class="card">
+                    <div class="card__eyebrow">01 · Strategy</div>
+                    <h3 class="card__title">Brand-aligned experience</h3>
+                    <p class="card__meta">
+                        We map your services, customer journeys, and messaging into a clear information architecture.
+                    </p>
+                    <ul class="card__list">
+                        <li>Discovery workshops & content audit</li>
+                        <li>Site map, page flows & wireframes</li>
+                        <li>Positioning & value proposition refinement</li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <div class="card__eyebrow">02 · Delivery</div>
+                    <h3 class="card__title">Pixel-perfect implementation</h3>
+                    <p class="card__meta">
+                        Modern, responsive layouts engineered for performance, accessibility, and maintainability.
+                    </p>
+                    <ul class="card__list">
+                        <li>Responsive HTML & CSS components</li>
+                        <li>Nginx-backed static hosting on AWS</li>
+                        <li>Analytics & basic SEO baked in</li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <div class="card__eyebrow">03 · Operations</div>
+                    <h3 class="card__title">DevOps-ready foundation</h3>
+                    <p class="card__meta">
+                        Git-first workflows, automated deployments, and transparent documentation as standard.
+                    </p>
+                    <ul class="card__list">
+                        <li>GitHub-based source management</li>
+                        <li>CI-oriented folder structure</li>
+                        <li>Clear handover documentation</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-inner">
+        <span>© 2025 NovaEdge Consulting. All rights reserved.</span>
+        <span>Built with HTML, CSS, Git & Nginx on AWS.</span>
+    </div>
+</footer>
+</body>
+</html>

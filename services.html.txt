@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services – NovaEdge Consulting</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="site-header">
+    <nav class="nav">
+        <div class="nav__brand">
+            <div class="nav__logo-mark"></div>
+            <div class="nav__title">
+                NovaEdge
+                <span>Digital Consulting Studio</span>
+            </div>
+        </div>
+        <div class="nav__links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html" class="nav__link--active">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <a href="contact.html" class="cta-button">
+            Book a discovery call →
+        </a>
+    </nav>
+</header>
+
+<main>
+    <div class="wrapper">
+        <section>
+            <div class="section-header">
+                <div>
+                    <h1 class="section-title">Services engineered for measurable impact.</h1>
+                    <p class="section-subtitle">
+                        We focus on a compact set of services so we can go deep, move fast, and stay accountable
+                        for outcomes – not just deliverables.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card-grid-3">
+                <article class="card">
+                    <div class="card__eyebrow">Core · 01</div>
+                    <h2 class="card__title">Corporate website design</h2>
+                    <p class="card__meta">
+                        Custom, fully responsive marketing sites that communicate your value clearly and credibly.
+                    </p>
+                    <ul class="card__list">
+                        <li>Homepage, About, Services, Careers, Contact, and more</li>
+                        <li>Conversion-focused page layouts</li>
+                        <li>On-brand visual system & typography</li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <div class="card__eyebrow">Core · 02</div>
+                    <h2 class="card__title">Landing pages & campaigns</h2>
+                    <p class="card__meta">
+                        Focused pages built for launches, events, and specific marketing campaigns.
+                    </p>
+                    <ul class="card__list">
+                        <li>Dedicated campaign and product pages</li>
+                        <li>Analytics & conversion event tracking</li>
+                        <li>Fast iterations on copy & layout</li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <div class="card__eyebrow">Core · 03</div>
+                    <h2 class="card__title">Cloud & deployment setup</h2>
+                    <p class="card__meta">
+                        Reliable hosting using AWS EC2 and Nginx – with DevOps-ready defaults.
+                    </p>
+                    <ul class="card__list">
+                        <li>AWS account & EC2 provisioning</li>
+                        <li>Nginx static hosting configuration</li>
+                        <li>Basic monitoring & logging setup</li>
+                    </ul>
+                </article>
+            </div>
+
+            <div class="badge-row">
+                <span class="badge">HTML & CSS architecture</span>
+                <span class="badge">Responsive grid systems</span>
+                <span class="badge">Nginx on Linux</span>
+                <span class="badge">GitHub-based workflows</span>
+                <span class="badge">Performance optimisation</span>
+            </div>
+        </section>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-inner">
+        <span>© 2025 NovaEdge Consulting. All rights reserved.</span>
+        <span>Built with HTML, CSS, Git & Nginx on AWS.</span>
+    </div>
+</footer>
+</body>
+</html>
