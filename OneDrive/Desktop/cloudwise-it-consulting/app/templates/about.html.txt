@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="section narrow">
+    <h1>About CloudWise IT</h1>
+    <p>CloudWise IT Consulting is a boutique DevOps and cloud consulting firm
+       focused on helping small and mid-size businesses adopt modern cloud
+       practices.</p>
+
+    <h2>Our Approach</h2>
+    <ul class="bullets">
+        <li>Assess current infrastructure and processes</li>
+        <li>Design a realistic roadmap</li>
+        <li>Automate everything with code</li>
+        <li>Train your team to own the platform</li>
+    </ul>
+</section>
+{% endblock %}

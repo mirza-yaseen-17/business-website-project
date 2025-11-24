@@ -1,0 +1,20 @@
+param(
+    [string]$SubscriptionId = "YOUR_SUBSCRIPTION_ID",
+    [string]$ResourceGroup = "cloudwise-rg",
+    [string]$AksName = "cloudwise-aks"
+)
+
+az login
+az account set --subscription $SubscriptionId
+
+cd ../terraform
+terraform init
+terraform apply -auto-approve
+
+$AksNameOut = (terraform output -raw aks_name)
+$RgOut = $ResourceGroup
+
+az aks get-credentials --resource-group $RgOut --name $AksNameOut --overwrite-existing
+
+cd ../helm
+helm upgrade --install cloudwise cloudwise-chart

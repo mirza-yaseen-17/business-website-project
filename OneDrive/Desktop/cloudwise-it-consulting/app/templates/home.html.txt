@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero">
+    <div class="hero-text">
+        <h1>We Build Reliable Cloud & DevOps Solutions</h1>
+        <p>CloudWise IT helps businesses modernize their infrastructure with
+           Kubernetes, CI/CD, and observability best practices.</p>
+        <div class="hero-actions">
+            <a href="{{ url_for('services') }}" class="btn-primary">View Services</a>
+            <a href="{{ url_for('projects') }}" class="btn-secondary">See Case Studies</a>
+        </div>
+    </div>
+    <div class="hero-image">
+        <div class="card-metric">
+            <h3>99.9% uptime</h3>
+            <p>Achieved on client platforms</p>
+        </div>
+        <div class="card-metric">
+            <h3>30% cost savings</h3>
+            <p>Average cloud optimization</p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <h2>Why CloudWise?</h2>
+    <div class="grid-3">
+        <div class="card">
+            <h3>Cloud Native</h3>
+            <p>We design solutions on Azure using Kubernetes, containers, and managed services.</p>
+        </div>
+        <div class="card">
+            <h3>Automation First</h3>
+            <p>From Terraform to CI/CD pipelines, everything is repeatable and versioned.</p>
+        </div>
+        <div class="card">
+            <h3>Observability</h3>
+            <p>Prometheus & Grafana dashboards keep your systems transparent and healthy.</p>
+        </div>
+    </div>
+</section>
+{% endblock %}

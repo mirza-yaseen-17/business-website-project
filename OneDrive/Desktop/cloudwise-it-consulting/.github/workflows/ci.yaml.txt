@@ -1,0 +1,34 @@
+name: CI-Build-Docker
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+
+    env:
+      ACR_LOGIN_SERVER: ${{ secrets.ACR_LOGIN_SERVER }}
+      ACR_USERNAME: ${{ secrets.ACR_USERNAME }}
+      ACR_PASSWORD: ${{ secrets.ACR_PASSWORD }}
+      IMAGE_NAME: cloudwise-it
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Docker login
+        run: echo "$ACR_PASSWORD" | docker login $ACR_LOGIN_SERVER \
+              --username $ACR_USERNAME --password-stdin
+
+      - name: Build image
+        run: |
+          docker build -t $ACR_LOGIN_SERVER/$IMAGE_NAME:${{ github.sha }} .
+          docker tag $ACR_LOGIN_SERVER/$IMAGE_NAME:${{ github.sha }} \
+                     $ACR_LOGIN_SERVER/$IMAGE_NAME:latest
+
+      - name: Push image
+        run: |
+          docker push $ACR_LOGIN_SERVER/$IMAGE_NAME:${{ github.sha }}
+          docker push $ACR_LOGIN_SERVER/$IMAGE_NAME:latest

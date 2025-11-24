@@ -1,0 +1,90 @@
+from flask import Flask, render_template, request
+from prometheus_client import generate_latest, CONTENT_TYPE_LATEST
+import time
+from functools import wraps
+
+from metrics import REQUEST_COUNT, REQUEST_LATENCY
+
+app = Flask(__name__)
+
+# Simple decorator to record metrics
+def track(endpoint_name):
+    def decorator(f):
+        @wraps(f)
+        def wrapper(*args, **kwargs):
+            start = time.time()
+            response = f(*args, **kwargs)
+            latency = time.time() - start
+            status_code = 200
+            if hasattr(response, "status_code"):
+                status_code = response.status_code
+            REQUEST_COUNT.labels(request.method, endpoint_name, status_code).inc()
+            REQUEST_LATENCY.labels(endpoint_name).observe(latency)
+            return response
+        return wrapper
+    return decorator
+
+
+@app.route("/")
+@track("home")
+def home():
+    return render_template("home.html")
+
+
+@app.route("/services")
+@track("services")
+def services():
+    return render_template("services.html")
+
+
+@app.route("/about")
+@track("about")
+def about():
+    return render_template("about.html")
+
+
+@app.route("/projects")
+@track("projects")
+def projects():
+    return render_template("projects.html")
+
+
+@app.route("/blog")
+@track("blog")
+def blog():
+    posts = [
+        {
+            "title": "How DevOps Accelerates Digital Transformation",
+            "date": "2025-01-10",
+            "summary": "Key DevOps practices that help enterprises modernize faster."
+        },
+        {
+            "title": "Cloud Cost Optimization Basics",
+            "date": "2025-01-15",
+            "summary": "Simple strategies to reduce waste in your cloud bill."
+        },
+    ]
+    return render_template("blog.html", posts=posts)
+
+
+@app.route("/contact", methods=["GET", "POST"])
+@track("contact")
+def contact():
+    message_sent = False
+    if request.method == "POST":
+        name = request.form.get("name")
+        email = request.form.get("email")
+        message = request.form.get("message")
+        # For demo: just print – in real project integrate email or ticketing
+        print(f"[CONTACT] {name} <{email}>: {message}")
+        message_sent = True
+    return render_template("contact.html", message_sent=message_sent)
+
+
+@app.route("/metrics")
+def metrics():
+    return generate_latest(), 200, {"Content-Type": CONTENT_TYPE_LATEST}
+
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000)

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="section narrow">
+    <h1>Contact Us</h1>
+    {% if message_sent %}
+        <div class="alert success">Thank you! We’ll get back to you soon.</div>
+    {% endif %}
+    <form method="POST" class="contact-form">
+        <label>Name
+            <input type="text" name="name" required>
+        </label>
+        <label>Email
+            <input type="email" name="email" required>
+        </label>
+        <label>Message
+            <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button type="submit" class="btn-primary">Send</button>
+    </form>
+</section>
+{% endblock %}

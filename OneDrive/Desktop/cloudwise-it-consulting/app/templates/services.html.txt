@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="section narrow">
+    <h1>Services</h1>
+    <div class="grid-2">
+        <div class="card">
+            <h3>DevOps Consulting</h3>
+            <ul>
+                <li>CI/CD pipeline design (GitHub Actions, Azure DevOps)</li>
+                <li>Infrastructure as Code with Terraform</li>
+                <li>Git branching and release strategy</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Cloud Migration</h3>
+            <ul>
+                <li>Lift & shift workloads to Azure</li>
+                <li>Containerization with Docker & AKS</li>
+                <li>Cost and performance optimization</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Platform Engineering</h3>
+            <ul>
+                <li>Kubernetes platform design</li>
+                <li>Helm-based app deployment</li>
+                <li>Multi-environment strategies</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Monitoring & SRE</h3>
+            <ul>
+                <li>Prometheus & Grafana setup</li>
+                <li>Alerting and SLAs</li>
+                <li>Incident response process</li>
+            </ul>
+        </div>
+    </div>
+</section>
+{% endblock %}

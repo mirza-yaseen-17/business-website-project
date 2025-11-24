@@ -1,0 +1,16 @@
+image:
+  repository: YOUR_ACR_LOGIN_SERVER/cloudwise-it
+  tag: "latest"
+  pullPolicy: IfNotPresent
+
+service:
+  type: LoadBalancer
+  port: 80
+
+resources: {}
+
+ingress:
+  enabled: false
+
+prometheus:
+  enabled: true

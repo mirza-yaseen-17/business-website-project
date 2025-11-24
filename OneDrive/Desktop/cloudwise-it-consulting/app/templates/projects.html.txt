@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="section narrow">
+    <h1>Case Studies</h1>
+    <div class="timeline">
+        <div class="timeline-item">
+            <h3>E-commerce Platform – Azure AKS Migration</h3>
+            <p>Containerized legacy .NET and Python services, deployed to AKS using
+               Helm, and implemented GitHub Actions CI + Azure DevOps CD. Result:
+               40% faster releases.</p>
+        </div>
+        <div class="timeline-item">
+            <h3>FinTech Startup – Observability Stack</h3>
+            <p>Implemented Prometheus + Grafana dashboards and alerts across
+               microservices, leading to 60% reduction in MTTR.</p>
+        </div>
+    </div>
+</section>
+{% endblock %}
