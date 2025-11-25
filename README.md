@@ -20,15 +20,6 @@ Version Control
 Git – Local source control
 GitHub – Remote repository hosting (business-website-project)
 
-Assets
-Custom images for hero, services, team, and portfolio
-Organized folder system:
-assets/
-  css/
-  images/
-
-screenshort
-
 
 
 
